@@ -1,0 +1,111 @@
+:root {
+    --fontsize-h3: 1.5rem;
+    --fontsize-h4: 1.25rem;
+    --fontsize-normal: 1rem;
+}
+
+.wrapper {
+    padding: 1rem 0rem;
+}
+
+.label {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.editor {
+    background-color: white;
+    border-color: black;
+    border-width: 2px;
+    margin-top: 1rem;
+    min-height: 500px;
+}
+
+.cancel {
+    padding: 1rem;
+    width: 8rem;
+    background-color: white;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 10px;
+}
+
+.btn-container {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    margin-top: 4px;
+    padding: 4px;
+    min-height: 2.75rem;
+}
+
+fieldset {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.ql-container {
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: var(--fontsize-normal);
+    min-height: 500px;
+    margin: 0;
+    position: relative;
+}
+
+.ql-editor h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: var(--fontsize-h3);
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 0;
+}
+
+.ql-editor h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: var(--fontsize-h4);
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 0;
+}
+.ql-editor p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: var(--fontsize-normal);
+    margin-bottom: 1rem;
+    padding: 0;
+}
+
+/* header toolbar*/
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value='3']::before {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value='4']::before {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.ql-container.ql-snow {
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.ql-snow .ql-picker.ql-header .ql-picker-item::before {
+    content: 'Normal';
+}
+.ql-snow .ql-picker.ql-header .ql-picker-label[data-value='3']::before,
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value='3']::before {
+    content: 'Heading';
+}
+.ql-snow .ql-picker.ql-header .ql-picker-label[data-value='4']::before,
+.ql-snow .ql-picker.ql-header .ql-picker-item[data-value='4']::before {
+    content: 'Sub-heading';
+}

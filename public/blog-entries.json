@@ -1,0 +1,106 @@
+[
+    {
+        "title": "All about stuff",
+        "dateCreated": "10/10/2024",
+        "id": "all-about-stuff-abcd",
+        "content": [
+            {
+                "insert": "Something interesting comment about nothing\nStuff"
+            },
+            {
+                "attributes": {
+                    "header": 3
+                },
+                "insert": "\n"
+            },
+            {
+                "insert": "This topic is all about stuff. Stuff is great, everyone loves stuff, but not always the same stuff. We bond over the stuff in common that we like and dislike. Often the stuff we like changes over time, stuff that once seemed new and exciting becomes old, boring, and forgotten, making room for new stuff to capture our interests.\nThe stuff we like."
+            },
+            {
+                "attributes": {
+                    "header": 4
+                },
+                "insert": "\n"
+            },
+            {
+                "insert": "The stuff we like improves our lives in one way or another. It may bring us simple joy or help us achieve our goals. Once stuff no longer serves its purpose, we interact with stuff less and less, slowly forgetting about it from our mind. However forgotten stuff still usually lives on, taking up space waiting, hoping, for the to become useful again, if ever.\nHelp stuff out."
+            },
+            {
+                "attributes": {
+                    "header": 4
+                },
+                "insert": "\n"
+            },
+            {
+                "insert": "Our needs and wants change so often, it inevitable that stuff will eventually get discarded. But just because its stuff no longer serves a purpose for use in the here and now, doesn't mean that stuff has become useless in and of itself. There might be a time in the future where we will need this stuff again, we should take care to properly store these stuff away, so when the times comes again for the stuff to be useful, its ready to go. Alternatively, these stuff might be of use to someone else, we can look at rehoming our stuff with someone else, even potentially recovering some of the initial cost. Benefits of rehoming our stuff is that we make room for new stuff to enter our lives, while extending the useful life of our old friend.\n\n"
+            }
+        ]
+    },
+    {
+        "title": "A blog about nothing",
+        "dateCreated": "Sat Mar 30 2024",
+        "id": "a-blog-about-nothing-sasSsy",
+        "content": [
+            {
+                "attributes": {
+                    "bold": true
+                },
+                "insert": "Nothingness"
+            },
+            {
+                "attributes": {
+                    "header": 3
+                },
+                "insert": "\n"
+            },
+            {
+                "insert": "In the beginning, before there was something, there was nothing. Then from nothing came something, eventually becoming everything existing in the universe today.\n"
+            },
+            {
+                "attributes": {
+                    "bold": true
+                },
+                "insert": "Nothing rules the universe."
+            },
+            {
+                "attributes": {
+                    "header": 4
+                },
+                "insert": "\n"
+            },
+            {
+                "insert": "Something likes to hang around other things, and given enough time, something will gravitate towards each other. This is gravity, and all something, from the simple to the complex have gravity to thanks for being something. With all this something in the universe, logically over time, all the something in the universe should come together. However this is not we observe in the universe, in fact, all the things are moving further away from each other.\nAs it turns out, in between all the something, there are empty space of nothing, but within in this nothing, there is something. Not something that we can touch or see, but this something coming from nothing is causing all the things to move away from each other, causing more nothing to exist between all the something, which in turn further pushes all the something away from each other, making more of nothing, and on and on and on the cycle repeats.\n"
+            },
+            {
+                "attributes": {
+                    "bold": true
+                },
+                "insert": "From nothing to something, and back to nothing"
+            },
+            {
+                "attributes": {
+                    "header": 4
+                },
+                "insert": "\n"
+            },
+            {
+                "insert": "So as the universe came from nothing, to become something, something could not fill up all the space where there was once nothing, and so nothing just waited, slowly making more of nothing, slowly pushing something apart, and eventually over a trillion, trillion, trillion years, there will once again be nothing, after all, it is nothing, nothing does not care for time, a trillion years, or a single second is all the same to nothing, and from something we return to nothing.\n"
+            },
+            {
+                "attributes": {
+                    "bold": true
+                },
+                "insert": "The end?"
+            },
+            {
+                "attributes": {
+                    "header": 4
+                },
+                "insert": "\n"
+            },
+            {
+                "insert": "But, just as something had come from nothing before, we may be in an endless cycle of something then nothing, then something, for the rest of time.\n"
+            }
+        ]
+    }
+]
