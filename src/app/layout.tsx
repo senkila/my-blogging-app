@@ -1,14 +1,8 @@
-import type { Metadata } from 'next'
-import { Young_Serif } from 'next/font/google'
 import './globals.css'
+
+import type { Metadata } from 'next'
 import PageLayout from '../components/page-layout/PageLayout'
-
 import AppContextProvider from '../components/context/AppContext'
-
-export const young_serif = Young_Serif({
-    subsets: ['latin'],
-    weight: '400',
-})
 
 export const metadata: Metadata = {
     title: 'Overcoming the Imposter',

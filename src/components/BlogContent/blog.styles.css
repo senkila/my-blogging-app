@@ -1,70 +1,69 @@
 .blog-content {
     margin-bottom: 4rem;
     font-size: 1rem;
-
-    .date-created {
-        font-style: italic;
-    }
-
-    .date-created.preview-entry {
-        margin-bottom: 0.5rem;
-    }
-
-    .date-created.full-entry {
-        font-family: Arial, Helvetica, sans-serif;
-        margin-bottom: 3.5rem;
-    }
-
-    h2 {
-        font-size: 2.5rem;
-        font-weight: bold;
-        font-style: normal;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    h3 {
-        font-size: 1.5rem;
-        font-weight: bold;
-        font-family: Arial, Helvetica, sans-serif;
-        margin-top: 0.5rem;
-        margin-bottom: 1rem;
-    }
-
-    h4 {
-        font-size: 1.25rem;
-        font-weight: bold;
-        font-family: Arial, Helvetica, sans-serif;
-        margin-top: 0.5rem;
-        margin-bottom: 1rem;
-    }
 }
 
-.blog-content .full-entry {
+.date-created {
+    font-style: italic;
+}
+
+.date-created.preview-entry {
+    margin-bottom: 0.5rem;
+}
+
+.date-created.full-entry {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 3.5rem;
+}
+
+.blog-content h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.blog-content h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.blog-content h4 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.full-entry {
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
-    p {
-        font-size: 1rem;
-        margin-bottom: 1rem;
-    }
+.full-entry p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
 
-    ol {
-        list-style-type: decimal;
-        padding-left: 1.5em;
-        margin-left: 1.5rem;
-    }
+.full-entry ol {
+    list-style-type: decimal;
+    padding-left: 1.5em;
+    margin-left: 1.5rem;
 }
 
 .blog-content .preview-entry {
     font-family: Arial, Helvetica, sans-serif;
+}
+.preview-entry p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
 
-    p {
-        font-size: 1rem;
-        margin-bottom: 1rem;
-    }
-
-    ol {
-        list-style-type: decimal;
-        padding-left: 1.5em;
-        margin-left: 1.5rem;
-    }
+.preview-entry ol {
+    list-style-type: decimal;
+    padding-left: 1.5em;
+    margin-left: 1.5rem;
 }

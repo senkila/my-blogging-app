@@ -4,8 +4,7 @@
     --fontsize-normal: 1rem;
 }
 
-.wrapper {
-    padding: 1rem 0rem;
+form {
 }
 
 .label {
@@ -18,7 +17,7 @@
     border-color: black;
     border-width: 2px;
     margin-top: 1rem;
-    min-height: 500px;
+    min-height: 50%;
 }
 
 .cancel {
@@ -52,9 +51,9 @@ fieldset {
     box-sizing: border-box;
     font-family: Helvetica, Arial, sans-serif;
     font-size: var(--fontsize-normal);
-    min-height: 500px;
     margin: 0;
     position: relative;
+    min-height: 50%;
 }
 
 .ql-editor h3 {
@@ -108,4 +107,18 @@ fieldset {
 .ql-snow .ql-picker.ql-header .ql-picker-label[data-value='4']::before,
 .ql-snow .ql-picker.ql-header .ql-picker-item[data-value='4']::before {
     content: 'Sub-heading';
+}
+
+.ql-toolbar.ql-snow {
+    border: 2px solid black;
+}
+
+.ql-container.ql-snow {
+    border: 2px solid black;
+    font-size: 1rem;
+}
+
+.ql-code-block-container .ql-ui {
+    color: black;
+    font-size: 12px;
 }

@@ -20,7 +20,9 @@
         ],
         "paths": {
             "@/*": ["./*"]
-        }
+        },
+        "types": ["@testing-library/jest-dom"],
+        "strictNullChecks": true
     },
     "include": [
         "next-env.d.ts",
@@ -28,7 +30,7 @@
         "**/*.ts",
         "**/*.tsx",
         ".next/types/**/*.ts",
-        "src/app/create-blog/EditorQ/test.js"
+        "jest.config.ts"
     ],
     "exclude": ["node_modules"]
 }

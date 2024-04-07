@@ -1,13 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 
 :root {
     --foreground-color: black;
     --background-start-color: #ffedd5;
     --background-end-color: #fecaca;
-    --primary-color: #d45500;
+    --primary-color: #0f172a;
 }
 
 body {
@@ -23,25 +22,21 @@ body {
 }
 
 h1.pageTitle {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 400;
     font-style: normal;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     text-decoration: underline;
     text-decoration-color: var(--primary-color);
     color: var(--primary-color);
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 6rem;
+    margin-bottom: 1.5rem;
 }
 
 h2 {
     font-size: 2.5rem;
     font-weight: bold;
     font-style: normal;
-}
-
-main {
 }
 
 h3 {

@@ -102,5 +102,30 @@
                 "insert": "But, just as something had come from nothing before, we may be in an endless cycle of something then nothing, then something, for the rest of time.\n"
             }
         ]
+    },
+    {
+        "title": "code block",
+        "dateCreated": "07/04/2024",
+        "content": [
+            {
+                "insert": "import code from 'code'"
+            },
+            {
+                "attributes": {
+                    "code-block": "javascript"
+                },
+                "insert": "\n\n"
+            },
+            {
+                "insert": "console.log('help')"
+            },
+            {
+                "attributes": {
+                    "code-block": "javascript"
+                },
+                "insert": "\n"
+            }
+        ],
+        "id": "code-block-pY5V3CLhWQEia44MBS24xN"
     }
 ]

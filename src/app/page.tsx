@@ -1,23 +1,27 @@
 'use client'
 import Link from 'next/link'
-import Image from 'next/image'
-import { useContext, useEffect, useRef } from 'react'
+import { useContext, useEffect } from 'react'
 import { AppContext } from 'src/components/context/AppContext'
 import { useRouter } from 'next/navigation'
-import './globals.css'
 import { PreviewBlogContent } from 'src/components'
-import { BlogEntry } from 'types/blog-data'
+import { BlogEntryData } from 'types/blog-data'
+import Button from '../components/ui/Buttons'
+import { AddIcon } from '../components/ui/icons'
+import 'highlight.js/styles/tokyo-night-dark.css'
+import hljs from 'highlight.js'
+import javascript from 'highlight.js/lib/languages/javascript'
 
 export default function Home() {
     const context = useContext(AppContext)
     const router = useRouter()
 
-    const ref = useRef(null)
-
     const entries = context.entries.toReversed()
+
     useEffect(() => {
-        console.log('Blog page', { entries })
-    }, [entries])
+        document.querySelectorAll('pre').forEach((el) => {
+            hljs.highlightElement(el)
+        })
+    }, [])
 
     return (
         <main className="flex min-h-screen flex-col items-center justify-between pt-10">
@@ -29,24 +33,17 @@ export default function Home() {
                     get exposure to in my professional life, while also serving
                     as a place where I can share my journey along the way.
                 </p>
-                <button
-                    className="btn my-4 w-60 self-end inline-flex hover:shadow-inner"
-                    onClick={() => router.push('/create-blog')}
-                >
-                    <Image
-                        src="/icons/add.svg"
-                        alt="Add"
-                        width={24}
-                        height={24}
-                        priority
-                        className="add justify-self-start absolute"
-                    />
-                    <span className="mx-auto flex flex-row">
-                        Create new post
-                    </span>
-                </button>
+                <Button
+                    label="Create new post"
+                    icon={AddIcon}
+                    variant={'secondary'}
+                    onClick={() => {
+                        console.log('clicked create')
+                        router.push('/create-blog')
+                    }}
+                />
                 <section className="flex flex-col divide-y-2">
-                    {entries.map((entry: BlogEntry, index: any) => {
+                    {entries.map((entry: BlogEntryData, index: any) => {
                         return (
                             <Link key={index} href={`/${entry.id}`}>
                                 <PreviewBlogContent

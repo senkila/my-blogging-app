@@ -1,10 +1,11 @@
-import { BlogEntry } from 'types/blog-data'
+import { BlogEntryData } from 'types/blog-data'
 import parse from 'html-react-parser'
 import { QuillDeltaToHtmlConverter } from 'quill-delta-to-html'
+import 'highlight.js/styles/tokyo-night-dark.css'
 import './blog.styles.css'
 
 type DisplayBlogContentProps = {
-    entry?: BlogEntry
+    entry?: BlogEntryData
     id?: string
     preview?: boolean
     className?: string
@@ -12,7 +13,7 @@ type DisplayBlogContentProps = {
 }
 
 type BlogContentProps = {
-    entry?: BlogEntry
+    entry?: BlogEntryData
     className?: string
     [x: string]: any
 }
@@ -30,17 +31,18 @@ export const DisplayBlogContent = ({
 
     const convertedHtml = deltaConverter.convert()
     const dateCreatedString = `Date posted: ${dateCreated}`
-    const clampPreview = preview ? ' line-clamp-5' : ''
 
     return entry ? (
         <div
             id="blog-content"
-            className={`${className} flex flex-col pt-8 blog-content`}
+            className={`${className} blog-content flex flex-col pt-8`}
             {...rest}
         >
             <h2>{title}</h2>
             <p className={`date-created ${contentType}`}>{dateCreatedString}</p>
-            <section className={`${contentType.concat('', clampPreview)}`}>
+            <section
+                className={`${contentType}${preview ? ' line-clamp-5' : ''}`}
+            >
                 {parse(convertedHtml)}
             </section>
         </div>

@@ -2,18 +2,18 @@ import { DeltaStatic } from 'quill'
 import { Delta } from 'quill/core'
 import { Dispatch } from 'react'
 
-export interface BlogEntry {
+export interface BlogEntryData {
     title: String
     dateCreated: String
     content: DeltaStatic
     id: String
 }
 
-export interface BlogEntries {
-    entries: BlogEntry[]
+export interface BlogEntriesObject {
+    entries: IBlogEntry[]
 }
 
 export interface AppContextInterface {
-    entries: BlogEntry[]
+    entries: IBlogEntry[]
     addEntry: Dispatch<any>
 }
