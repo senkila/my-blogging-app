@@ -28,31 +28,37 @@ const quillOptions = {
     theme: 'snow',
 }
 
-export const TextEditor = ({ doSubmit }: { doSubmit?: any }) => {
+export const TextEditor = ({
+    onCancel = () => {},
+    onSubmit = () => {},
+}: {
+    onCancel: any
+    onSubmit: (blogEntry: BlogEntryData) => void
+}) => {
     // Editor state
-    const router = useRouter()
-    const { addEntry } = useContext(AppContext)
+    // const router = useRouter()
+
     const { quill, quillRef } = useQuill(quillOptions)
 
-    const handleSubmit = (formData: FormData) => {
-        const title = formData.get('title')?.toString()
-        const newEntry: Partial<BlogEntryData> = {
+    const mapFormData = (formData: FormData) => {
+        const title = formData.get('title')?.toString() ?? ''
+        const newEntry: BlogEntryData = {
             title,
             dateCreated: getCurrentDateString(),
             content: quill?.getContents().ops,
             id: generateId(title as string),
         }
-        addEntry(newEntry)
 
-        redirect('/')
+        return newEntry
     }
 
     const handleClick = () => {
         quill?.focus()
     }
 
-    const handleCancle = () => {
-        router.push('/')
+    const handleSubmit = (formData: FormData) => {
+        const blogEntry = mapFormData(formData)
+        onSubmit(blogEntry)
     }
 
     return (
@@ -79,7 +85,7 @@ export const TextEditor = ({ doSubmit }: { doSubmit?: any }) => {
                 <div className="my-4 flex flex-none flex-col gap-y-4 sm:gap-x-4 sm:flex-row-reverse">
                     <Button type={'submit'} label={'Submit'} />
                     <Button
-                        onClick={handleCancle}
+                        onClick={onCancel}
                         variant={'secondary'}
                         type={'button'}
                         label={'Cancel'}
