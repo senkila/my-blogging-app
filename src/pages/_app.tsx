@@ -1,5 +1,5 @@
 import type { AppProps } from 'next/app'
-import PageLayout from '../components/page-layout/PageLayout'
+import PageLayout from '../components/layout/layout'
 import hljs from 'highlight.js'
 import 'highlight.js/styles/tokyo-night-dark.css'
 import { useEffect } from 'react'

@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageHeader display content as html 1`] = `
+<img
+  alt="Embracing the Imposter"
+  class="heading"
+  data-nimg="1"
+  decoding="async"
+  fetchpriority="high"
+  height="150"
+  src="/header-text.svg"
+  style="color: transparent;"
+  width="1000"
+/>
+`;
+
+exports[`PageHeader display content as html 2`] = `
+<img
+  alt="A journey from no ops to dev op and beyond"
+  class="flavourText"
+  data-nimg="1"
+  decoding="async"
+  fetchpriority="high"
+  height="80"
+  src="/subheader.svg"
+  style="color: transparent;"
+  width="1000"
+/>
+`;

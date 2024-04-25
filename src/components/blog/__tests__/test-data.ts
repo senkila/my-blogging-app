@@ -1,6 +1,6 @@
-import { BlogEntryData } from '@/types/blog-data'
+import { BlogDBEntry } from '@/types/blog-data'
 
-export const fakeBlogEntry: BlogEntryData = {
+export const fakeBlogEntry: BlogDBEntry = {
     title: 'A blog about nothing',
     dateCreated: 'Sat Mar 30 2024',
     id: 'a-blog-about-nothing-sasSsy',

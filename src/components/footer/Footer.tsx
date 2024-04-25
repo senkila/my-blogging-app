@@ -3,7 +3,7 @@ import './footer.css'
 
 export const Footer = () => {
     return (
-        <div className={`footer w-full flex-col border-black`}>
+        <div id="footer" className={`footer w-full flex-col`}>
             <ul className="w-full grid grid-cols-2 justify-around">
                 <li>
                     <Link href="/">Home</Link>

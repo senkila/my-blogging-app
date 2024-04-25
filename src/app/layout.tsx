@@ -1,7 +1,8 @@
 import './globals.css'
+import 'highlight.js/styles/tokyo-night-dark.css'
 
 import type { Metadata } from 'next'
-import PageLayout from '../components/page-layout/PageLayout'
+import PageLayout from '../components/layout/layout'
 import AppContextProvider from '../components/context/AppContext'
 
 export const metadata: Metadata = {

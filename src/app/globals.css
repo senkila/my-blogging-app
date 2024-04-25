@@ -59,3 +59,8 @@ h4 {
     border-radius: 10px;
     font-weight: bold;
 }
+
+pre {
+    padding: 1rem;
+    font-size: 1rem;
+}

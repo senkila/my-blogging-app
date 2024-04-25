@@ -2,7 +2,7 @@
     {
         "title": "All about stuff",
         "dateCreated": "10/10/2024",
-        "id": "all-about-stuff-abcd",
+        "_id": "all-about-stuff-abcd",
         "content": [
             {
                 "insert": "Something interesting comment about nothing\nStuff"
@@ -39,7 +39,7 @@
     {
         "title": "A blog about nothing",
         "dateCreated": "Sat Mar 30 2024",
-        "id": "a-blog-about-nothing-sasSsy",
+        "_id": "a-blog-about-nothing-sasSsy",
         "content": [
             {
                 "attributes": {

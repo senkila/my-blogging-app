@@ -2,4 +2,4 @@ export {
     DisplayBlogContent,
     FullBlogContent,
     PreviewBlogContent,
-} from './Components'
+} from './components'

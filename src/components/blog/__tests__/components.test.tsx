@@ -1,8 +1,8 @@
 import '@testing-library/jest-dom'
 import React, { FC, ReactElement } from 'react'
-import { DisplayBlogContent, FullBlogContent, PreviewBlogContent } from '..'
+import { DisplayBlogContent, FullBlogContent, PreviewBlogContent } from '../..'
 import { fakeBlogEntry } from './test-data'
-import { render, screen } from '@testing-library/react'
+import { render, screen } from '@/src/utils/testUtils'
 
 describe('BlogContext', () => {
     describe('DisplayBlogContent', () => {

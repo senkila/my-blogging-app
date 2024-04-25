@@ -4,7 +4,7 @@ import './header.css'
 
 export const PageHeader = ({ className }: { className?: string }) => {
     return (
-        <div>
+        <div id="pageHeader">
             <Link href={'/'}>
                 <Image
                     src="/header-text.svg"

@@ -16,8 +16,8 @@ export const BackLink = ({ href, className, ...props }: BackLinkProps) => {
                 <Image
                     src="/icons/back-arrow.svg"
                     alt="Add"
-                    width={24}
-                    height={24}
+                    width={28}
+                    height={28}
                     priority
                     className="add justify-self-start mr-2"
                 />

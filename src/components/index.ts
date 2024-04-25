@@ -1,10 +1,7 @@
-export {
-    FullBlogContent,
-    PreviewBlogContent,
-    DisplayBlogContent,
-} from './BlogContent'
-export { Footer } from './footer/Footer'
-export { PageHeader } from './header/PageHeader'
-export { PageLayout } from './page-layout/PageLayout'
+export { FullBlogContent, PreviewBlogContent, DisplayBlogContent } from './blog'
+export { Footer } from './footer/footer'
+export { PageHeader } from './header/header'
+export { PageLayout } from './layout/layout'
 export { AppContext, AppContextProvider } from './context/AppContext'
-export { BackLink } from './ui/BackLink'
+export { BackLink } from './ui/backlink'
+export { Loading } from './loading/loading'

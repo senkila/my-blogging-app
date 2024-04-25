@@ -1,4 +1,4 @@
-import { Footer, PageHeader } from 'src/components'
+import { Footer, PageHeader } from '@/src/components'
 
 //@ts-ignore
 export function PageLayout({ children }) {
@@ -8,7 +8,9 @@ export function PageLayout({ children }) {
                 <section className="flex flex-col items-center bg-white z-50">
                     <PageHeader />
                 </section>
-                {children}
+                <section className="flex flex-col flex-grow mx-4">
+                    {children}
+                </section>
                 <Footer />
             </div>
         </div>
